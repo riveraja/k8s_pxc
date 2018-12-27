@@ -95,7 +95,9 @@ spec:
   - metadata:
       name: datadir
     spec:
-      accessModes: [ "ReadWriteOnce" ]
+      storageClassName: local-storage
+      accessModes:
+      - ReadWriteOnce
       resources:
         requests:
           storage: 1Gi
