@@ -25,7 +25,7 @@ spec:
         volumeMounts:
         - name: proxydata
           mountPath: /var/lib/proxysql
-          subPath: data
+          subPath: proxysql
         env:
         - name: MYSQL_ROOT_PASSWORD
           valueFrom:
